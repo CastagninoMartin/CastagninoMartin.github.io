@@ -1,63 +1,64 @@
-/* styles.css */
-
-/* Fondo y texto */
 body {
-    font-family: 'Helvetica Neue', sans-serif;
-    color: #333;
-    background-color: #f7f7f7;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #000000;
     margin: 0;
     padding: 0;
 }
 
-/* Encabezado */
 header {
-    background-color: #ff69b4; /* Rosa */
-    color: white;
-    padding: 10px 0;
+    background-color: #ffffff;
+    padding: 20px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* Menú de navegación */
-nav {
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
     display: flex;
     justify-content: center;
-    background-color: #ff69b4; /* Rosa */
-    padding: 10px 0;
+    margin: 10px 0 0;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
+nav ul li {
     margin: 0 15px;
-    font-size: 18px;
 }
 
-nav a:hover {
-    text-decoration: underline;
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
 }
 
-/* Contenido principal */
 main {
     padding: 20px;
     max-width: 800px;
-    margin: auto;
+    margin: 0 auto;
 }
 
-/* Publicaciones */
-.article {
-    background-color: white;
-    margin: 20px 0;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-/* Pie de página */
-footer {
-    background-color: #ff69b4; /* Rosa */
-    color: white;
+.welcome {
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    margin-bottom: 40px;
+}
+
+.publications {
+    margin-top: 20px;
+}
+
+.publications h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
 }
