@@ -1,1 +1,17 @@
-// Aquí puedes agregar código JavaScript más adelante
+document.addEventListener('DOMContentLoaded', function() {
+    const elements = document.querySelectorAll('.fade-in');
+    
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            } else {
+                entry.target.classList.remove('visible');
+            }
+        });
+    });
+    
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+});
